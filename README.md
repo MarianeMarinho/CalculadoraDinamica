@@ -1,0 +1,1 @@
+Aplicação conta com uma calculadora convencional e uma com o cálculo mais simplificado podendo alternar entre as duas utilizando apenas um click .😉🖱
