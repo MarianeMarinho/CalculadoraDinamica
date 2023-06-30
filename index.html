@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculando</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="conteudogeral">
+    <div id="abas">
+      <button class="tablinks" id="botao01" onclick="openCity(event, 'calculadoraNumerica')">Cálculo Simplificado</button>
+      <button class="tablinks" id="botao02" onclick="openCity(event, 'calculadoraBotoes')">Calculadora  </button>
+    </div>
+  <div id="calculadoraNumerica" class="tabcontent">
+    <div id="central">
+      <section id="telaprincipal">
+        <h1 id="titulopagina">Calculando</h1>
+        <div id="campos-digitaveis">
+          <input type="number" name="" id="texto1" class="inserirvalores">
+          <div id="sinal"></div>
+          <input type="number" name="" id="texto2" class="inserirvalores">
+          <input type="button" value="=" onclick="calcular()" id="igual">
+        </div>
+        <div id="operadores">
+          <button value="+" onclick="somar()" id="somar" class="botoesoperadores">+</button>
+          <button value="-" onclick="subtrair()" id="subtrair" class="botoesoperadores">-</button>
+          <button value="x" onclick="multiplicar()" id="multiplicar" class="botoesoperadores">x</button>
+          <button value="dividir" onclick="dividir()" id="dividir" class="botoesoperadores">/</button>
+        </div>
+
+
+
+        <div id="res">resultado</div>
+      </section>
+    </div>
+  </div>
+
+  <div id="calculadoraBotoes" class="tabcontent">
+    <div id="corpo">
+      <section id="sessaocalculadora">
+        <div id="titulo">
+          <h1>Calculadora</h1>
+        </div>
+
+        <div id="displaycima">
+          <h2 id="resultado"></h2>
+        </div>
+
+        <div id="displaybaixo">
+          <div class="botoes">
+            <button onclick="um()" id="um" class="botaonumeros">1</button>
+            <button onclick="dois()" id="dois" class="botaonumeros">2</button>
+            <button onclick="tres()" id="tres" class="botaonumeros">3</button>
+            <button onclick="deletar()" id="deletar" class="destaque"><img id="imagem" src="./img/backspace (1).png"
+                alt=""></button>
+          </div>
+          <div class="botoes">
+            <button onclick="quatro()" id="quatro" class="botaonumeros">4</button>
+            <button onclick="cinco()" id="cinco" class="botaonumeros">5</button>
+            <button onclick="seis()" id="seis" class="botaonumeros">6</button>
+            <button onclick="subtracao()" id="subtracao" class="destaque">-</button>
+          </div>
+          <div class="botoes">
+            <button onclick="sete()" id="sete" class="botaonumeros">7</button>
+            <button onclick="oito()" id="oito" class="botaonumeros">8</button>
+            <button onclick="nove()" id="nove" class="botaonumeros">9</button>
+            <button onclick="adicao()" id="adicao" class="destaque">+</button>
+
+          </div>
+
+          <div class="botoes">
+            <button onclick="zero()" id="zero" class="botaonumeros">0</button>
+            <button onclick="igual()" id="igual01" class="destaque">=</button>
+            <button onclick="multiplicacao()" id="multiplicacao" class="destaque">x</button>
+            <button onclick="divisao()" id="divisao" class="destaque">/</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="Tokyoo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <script src="script.js"></script>
+</div>
+</body>
+
+</html>
